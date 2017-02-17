@@ -2,3 +2,10 @@ What happens when you initialize a repository? Why do you need to do it?
 Initializing a git repository creates a .git file in that repo in order to keep
 track of the metadata so that git can do its thing. You need to do this in order
 for git to track the commits.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+The staging area is different from the working directory because it shows which
+files are about to be committed, and is different from the repository because the
+files here are not currently being tracked. I think it adds value due to letting you
+decided exactly what is going to be committed.
