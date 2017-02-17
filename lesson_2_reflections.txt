@@ -1,0 +1,4 @@
+What happens when you initialize a repository? Why do you need to do it?
+Initializing a git repository creates a .git file in that repo in order to keep
+track of the metadata so that git can do its thing. You need to do this in order
+for git to track the commits.
