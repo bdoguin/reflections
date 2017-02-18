@@ -9,3 +9,35 @@ The staging area is different from the working directory because it shows which
 files are about to be committed, and is different from the repository because the
 files here are not currently being tracked. I think it adds value due to letting you
 decided exactly what is going to be committed.
+
+How can you use the staging area to make sure you have one commit per logical change?
+You can use the staging area to make sure you have one commit per logical change
+by using git diff and get diff --staged to make sure what you have in the stagng
+area is only one logical change compared to what is in the working directory
+and what is in the last commit.
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+Branches would be useful when making a major or experimental change to a program
+Something big that might need a lot of its own code and you stil need a working
+master version to show or use.
+
+How do the diagrams help you visualize the branch structure?
+The diagrams help to visualize by showing the different branches and giving an idea
+of where they came from and their current state. Also helpful for figuring out
+what is the correct branch to be using.
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+The result of merging two branches together is that they incorporate the changes
+from both of the branches so now all the changes are part of the new merged branch.
+It is represented the way it is so that you can see that you can reach all of the
+previous commits on each branch.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+Git automatic merge is faster and only does merging where the desired output is
+obvious. Always doing merges manually would take much longer and could probably
+result in more errors based on human judgement than it would catching weird
+scenarios. Git already triggers a manual merge in scenaries when the output is
+unknown.
